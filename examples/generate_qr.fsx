@@ -1,6 +1,8 @@
 #r "nuget: FsBlocks, 0.0.1"
 
-open FsBlocks.Algorand
+open System.IO
+open System.Text
+open FsBlocks.Algorand.QR
 
 let supportThisProject =
   { address = "UJ6N6ZWLS4MH5324C5J6TAWRXXXVJNS7HVURGLEZ3QRV7ONGIV5ZZSUGWI"
