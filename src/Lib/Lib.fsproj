@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>FsBlocks</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Luis Ángel Méndez Gort</Authors>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <AssemblyName>FsBlocks</AssemblyName>
+    <RootNamespace>FsBlocks</RootNamespace>
+    <Title>Blockchain utilities in F#</Title>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Description>Blockchain utilities in F#</Description>
+    <PackageProjectUrl>https://github.com/lamg/FsBlocks</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/lamg/FsBlocks</RepositoryUrl>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+    <PackageIcon>logo.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Algorand\QR.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Net.Codecrete.QrCodeGenerator" Version="2.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+    <None Include="..\..\docs\images\logo.png" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+</Project>
